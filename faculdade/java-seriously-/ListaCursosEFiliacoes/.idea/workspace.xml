@@ -2,45 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="049aee26-82c1-47c5-b8a0-715426d850b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AULAJAVAPROJETO/projeto/Principal$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AULAJAVAPROJETO/projeto/Principal$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AULAJAVAPROJETO/projeto/Principal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AULAJAVAPROJETO/projeto/assets/knowledge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AULAJAVAPROJETO/projeto/assets/network(1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AULAJAVAPROJETO/projeto/assets/network.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AULAJAVAPROJETO/projeto/bean/Aluno$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AULAJAVAPROJETO/projeto/bean/Aluno.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AULAJAVAPROJETO/projeto/bean/Curso.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AULAJAVAPROJETO/projeto/controller/CursoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AULAJAVAPROJETO/projeto/dao/DaoCurso.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LISTACURSOSEFILIACOES/projeto/Principal$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LISTACURSOSEFILIACOES/projeto/Principal$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LISTACURSOSEFILIACOES/projeto/Principal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LISTACURSOSEFILIACOES/projeto/assets/knowledge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LISTACURSOSEFILIACOES/projeto/assets/network(1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LISTACURSOSEFILIACOES/projeto/assets/network.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LISTACURSOSEFILIACOES/projeto/bean/Aluno$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LISTACURSOSEFILIACOES/projeto/bean/Aluno.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LISTACURSOSEFILIACOES/projeto/bean/Curso.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LISTACURSOSEFILIACOES/projeto/controller/CursoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LISTACURSOSEFILIACOES/projeto/dao/DaoCurso.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ListaCursosEFiliacoes/projeto/Principal$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ListaCursosEFiliacoes/projeto/Principal$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ListaCursosEFiliacoes/projeto/Principal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ListaCursosEFiliacoes/projeto/assets/knowledge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ListaCursosEFiliacoes/projeto/assets/network(1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ListaCursosEFiliacoes/projeto/assets/network.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ListaCursosEFiliacoes/projeto/bean/Aluno$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ListaCursosEFiliacoes/projeto/bean/Aluno.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ListaCursosEFiliacoes/projeto/bean/Curso.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ListaCursosEFiliacoes/projeto/controller/CursoController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ListaCursosEFiliacoes/projeto/dao/DaoCurso.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projeto/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projeto/Principal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projeto/bean/Curso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projeto/bean/Curso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projeto/dao/DaoCurso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/projeto/dao/DaoCurso.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

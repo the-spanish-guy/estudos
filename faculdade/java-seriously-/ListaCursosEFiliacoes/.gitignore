@@ -1,2 +1,5 @@
-.idea
-.out
+# Exclude file production
+/out/
+
+# Exclude folder of IDE
+/.idea/

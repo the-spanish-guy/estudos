@@ -1,4 +1,11 @@
-# Projeto de Java
+# Lista curso e filiações
+
+Este programa recebe um id e realiza a busca do mesmo, conforme a escolha do usuário (curso ou filiação).
+
+![](https://raw.githubusercontent.com/the-spanish-guy/java-seriously-/master/ListaCursosEFiliacoes/src/projeto/assets/main_window.png)
+
+
+
 ## Listar Cursos
 
 - [x] Procurar por id.

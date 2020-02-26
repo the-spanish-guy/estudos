@@ -4,11 +4,14 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Curso {
-    int idCurso;
-    String nomeCurso;
-    String ciclo;
-    String ano;
+    int idCurso = 0;
+    String nomeCurso = "";
+    String ciclo = "";
+    String ano = "";
 
+    public Curso() {
+
+    }
     public Curso(int idCurso, String nome, String ciclo, String ano) {
         this.idCurso = idCurso;
         this.nomeCurso = nome;

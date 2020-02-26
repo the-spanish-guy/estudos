@@ -18,7 +18,7 @@ public class DaoCurso {
                 curso = course;
                 break;
             default:
-                JOptionPane.showMessageDialog(null,"Curso não encontrado");
+                return new Curso();
         }
         return curso;
     }

@@ -19,7 +19,7 @@ public class DaoFiliacao {
                 filiacao = filiacao1;
                 break;
             default:
-                JOptionPane.showMessageDialog(null,"Curso não encontrado");
+                return new Filiacao();
         }
         return filiacao;
     }

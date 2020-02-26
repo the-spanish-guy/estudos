@@ -1,11 +1,14 @@
 package projeto.bean;
 
 public class Filiacao {
-    int idFiliacao;
-    String filiacao1;
-    String filiacao2;
-    String nomeFiliado;
+    int idFiliacao = 0;
+    String filiacao1 = "";
+    String filiacao2 = "";
+    String nomeFiliado = "";
 
+    public Filiacao() {
+
+    }
     public Filiacao(int idFiliacao, String filiacao1, String filiacao2, String nomeFiliado) {
         this.idFiliacao = idFiliacao;
         this.filiacao1 = filiacao1;

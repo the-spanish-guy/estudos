@@ -6,9 +6,8 @@ public class Filiacao {
     String filiacao2 = "";
     String nomeFiliado = "";
 
-    public Filiacao() {
+    public Filiacao() {}
 
-    }
     public Filiacao(int idFiliacao, String filiacao1, String filiacao2, String nomeFiliado) {
         this.idFiliacao = idFiliacao;
         this.filiacao1 = filiacao1;

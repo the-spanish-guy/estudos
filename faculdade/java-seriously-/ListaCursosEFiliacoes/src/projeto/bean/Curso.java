@@ -9,9 +9,7 @@ public class Curso {
     String ciclo = "";
     String ano = "";
 
-    public Curso() {
-
-    }
+    public Curso() {}
     public Curso(int idCurso, String nome, String ciclo, String ano) {
         this.idCurso = idCurso;
         this.nomeCurso = nome;

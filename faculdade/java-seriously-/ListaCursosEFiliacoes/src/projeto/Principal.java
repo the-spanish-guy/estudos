@@ -40,7 +40,7 @@ public class Principal extends JFrame {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 int idFiliacao = Integer.parseInt((JOptionPane.showInputDialog("Id da Filiação")));
-                Filiacao filiacao = new Filiacao(0,"","","");
+                Filiacao filiacao = new Filiacao(idFiliacao,"","","");
                 FiliacaoController filiacaoController = new FiliacaoController();
 
                 filiacao = filiacaoController.BuscaFiliacaoPorId(filiacao);
@@ -62,7 +62,7 @@ public class Principal extends JFrame {
 
             public void actionPerformed(ActionEvent actionEvent) {
                 int idCurso = Integer.parseInt(JOptionPane.showInputDialog("Id do Curso"));
-                Curso curso = new Curso(0,"","","");
+                Curso curso = new Curso(idCurso,"","","");
                 CursoController cursoController = new CursoController();
                 curso = cursoController.BuscaCurso(curso);
 

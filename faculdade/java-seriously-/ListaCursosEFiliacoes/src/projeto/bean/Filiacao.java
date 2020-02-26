@@ -51,7 +51,7 @@ public class Filiacao {
     @Override
     public String toString() {
         if (!(filiacao1.length() > 0) || !(filiacao2.length() > 0) || !(nomeFiliado.length() > 0)) {
-            return "Curso não encontrado, fechando a janela";
+            return "Filiação não encontrada, fechando a janela";
         }
         return "Filiação \n" +
                 "id: " + idFiliacao +

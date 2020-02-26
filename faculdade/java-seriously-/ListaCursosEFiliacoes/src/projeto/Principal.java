@@ -9,6 +9,7 @@ import projeto.controller.FiliacaoController;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Objects;
 
 public class Principal extends JFrame {
     JButton btn1 = new JButton("Botao 1");
@@ -39,7 +40,15 @@ public class Principal extends JFrame {
         btn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                int idFiliacao = Integer.parseInt((JOptionPane.showInputDialog("Id da Filiação")));
+                int idFiliacao = 0;
+                try {
+                    idFiliacao = Integer.parseInt(JOptionPane.showInputDialog("Id da Filiação"));
+
+                } catch (NumberFormatException ne) {
+                    System.out.println(ne);
+                    JOptionPane.showMessageDialog(null,"Valor inválido! Insira apenas números!");
+                    return ;
+                }
                 Filiacao filiacao = new Filiacao(idFiliacao,"","","");
                 FiliacaoController filiacaoController = new FiliacaoController();
 
@@ -47,6 +56,7 @@ public class Principal extends JFrame {
 
                 System.out.println(filiacao.toString());
                 JOptionPane.showMessageDialog(null,filiacao.toString());
+
             }
         });
     }
@@ -61,7 +71,14 @@ public class Principal extends JFrame {
             @Override
 
             public void actionPerformed(ActionEvent actionEvent) {
-                int idCurso = Integer.parseInt(JOptionPane.showInputDialog("Id do Curso"));
+                int idCurso = 0;
+                try {
+                    idCurso = Integer.parseInt(JOptionPane.showInputDialog("Id do Curso"));
+                } catch (NumberFormatException ne) {
+                    System.out.println(ne);
+                    JOptionPane.showMessageDialog(null,"Valor inválido! Insira apenas números");
+                    return ;
+                }
                 Curso curso = new Curso(idCurso,"","","");
                 CursoController cursoController = new CursoController();
                 curso = cursoController.BuscaCurso(curso);

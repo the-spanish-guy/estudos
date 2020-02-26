@@ -22,7 +22,7 @@ public class Principal extends JFrame {
         btn2.setBounds(50,40,100,30);*/
         FirstBotao();
         SecondBotao();
-        setTitle("Teste");
+        setTitle("Lista curso e filiação");
 
         setSize(300,200);
         setDefaultCloseOperation(EXIT_ON_CLOSE);;

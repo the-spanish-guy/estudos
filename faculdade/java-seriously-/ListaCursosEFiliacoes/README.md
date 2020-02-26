@@ -11,11 +11,11 @@ Este programa recebe um id e realiza a busca do mesmo, conforme a escolha do usu
 - [x] Procurar por id.
 - [x] retorna mensagem com o resultado.
 - [x] retorna mensagem de erro quando nenhum Curso for encontrado.
-- [ ] retorna mensagem de erro quando o valor recebido for diferente de um número
+- [x] retorna mensagem de erro quando o valor recebido for diferente de um número
 
 ## Listar Filiações
 
 - [x] Procurando por id.
 - [x] retorna mensagem com o resultado.
 - [x] retorna mensagem de erro quando nenhuma Filiação for encontrada.
-- [ ] retorna mensagem de erro quando o valor recebido for diferente de um número
+- [x] retorna mensagem de erro quando o valor recebido for diferente de um número

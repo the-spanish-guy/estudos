@@ -1,7 +1,10 @@
 # Exclude file production
 /out/
+/out/*
 out
+out/*
 
 # Exclude folder of IDE
 /.idea/
-.idea
+/.idea/*
+.idea/*

@@ -2,7 +2,9 @@ package projeto;
 
 import projeto.bean.Aluno;
 import projeto.bean.Curso;
+import projeto.bean.Filiacao;
 import projeto.controller.CursoController;
+import projeto.controller.FiliacaoController;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -37,8 +39,14 @@ public class Principal extends JFrame {
         btn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                new Aluno();
-                Aluno.main();
+                int idFiliacao = Integer.parseInt((JOptionPane.showInputDialog("Id da Filiação")));
+                Filiacao filiacao = new Filiacao(idFiliacao,"","","");
+                FiliacaoController filiacaoController = new FiliacaoController();
+
+                filiacao = filiacaoController.BuscaFiliacaoPorId(filiacao);
+
+                System.out.println(filiacao.toString());
+                JOptionPane.showMessageDialog(null,filiacao.toString());
             }
         });
     }

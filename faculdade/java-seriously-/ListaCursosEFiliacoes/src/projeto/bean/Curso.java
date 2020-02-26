@@ -59,7 +59,10 @@ public class Curso {
 
 
     @Override
-    public String toString() {
+        public String toString() {
+        if (!(nomeCurso.length() > 0) || !(ciclo.length() > 0) || !(ano.length() > 0)) {
+            return "Curso não encontrado, fechando a janela";
+        }
         return "Curso \n" +
                 "id: " + idCurso +
                 "\nnome: " + nomeCurso +

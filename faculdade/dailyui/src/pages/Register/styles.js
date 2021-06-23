@@ -2,8 +2,8 @@ import { Dimensions, StyleSheet } from "react-native";
 import Constants from "expo-constants";
 
 export default StyleSheet.create({
-  container: { flex: 1, alignItems: "center" },
-  containerDaily:{ flexDirection: "row", marginBottom: 8 },
+  container: { flex: 1, alignItems: "center", backgroundColor: "#FFFFFF" },
+  containerDaily: { flexDirection: "row", marginBottom: 8 },
   daily: {
     color: "#e3548c",
     fontSize: 40,
@@ -63,5 +63,5 @@ export default StyleSheet.create({
     width: "80%",
     color: "#445AA9",
   },
-  terms: { color: "#567BFF" }
+  terms: { color: "#567BFF" },
 });

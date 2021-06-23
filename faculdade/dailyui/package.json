@@ -32,15 +32,15 @@
   "expo": {
     "name": "DailyUi",
     "icon": "./assets/icon.png",
-    "version": "2.0.0",
+    "version": "3.0.0",
     "slug": "daily-ui",
     "ios": {
       "bundleIdentifier": "com.luyo99.dailyui",
-      "buildNumber": "2.0.0"
+      "buildNumber": "3.0.0"
     },
     "android": {
       "package": "com.luyo99.dailyui",
-      "versionCode": 2
+      "versionCode": 3
     }
    }
 }

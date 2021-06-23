@@ -4,8 +4,10 @@ import Constants from "expo-constants";
 export default StyleSheet.create({
   container: {
     flex: 1,
-    width: Dimensions.get("window").width - 20,
-    marginLeft: 10,
+    width: Dimensions.get("window").width,
+    paddingLeft: 10,
+    paddingRight: 10,
+    backgroundColor: "#FFFFFF",
   },
   header: {
     flexDirection: "row",

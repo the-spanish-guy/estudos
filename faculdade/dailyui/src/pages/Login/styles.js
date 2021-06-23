@@ -2,7 +2,7 @@ import { Dimensions, StyleSheet } from "react-native";
 import Constants from "expo-constants";
 
 export default StyleSheet.create({
-  container: { flex: 1, alignItems: "center" },
+  container: { flex: 1, alignItems: "center", backgroundColor: "#FFFFFF" },
   daily: {
     color: "#e3548c",
     fontSize: 40,
@@ -49,7 +49,7 @@ export default StyleSheet.create({
   },
   labelBtnLogin: {
     fontSize: 20,
-    color: "#FFFFFF"
+    color: "#FFFFFF",
   },
   labelBtnRegister: {
     fontSize: 16,

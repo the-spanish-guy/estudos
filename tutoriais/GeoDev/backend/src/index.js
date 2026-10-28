@@ -11,10 +11,7 @@ const server = http.Server(app)
 
 setWebSocket(server)
 
-mongoose.connect(process.env.DB_MONGO,{
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-})
+mongoose.connect(process.env.DB_MONGO)
 
 app.use(cors())
 app.use(express.json()) //dando a entender ao express que as requisições serão no formato JSON

@@ -1,4 +1,4 @@
-const socketio = require('socket.io')
+const { Server } = require('socket.io')
 const parserStringAsArray = require('./utils/parserStringAsArray')
 const calculateDistance = require('./utils/calculateDistance')
 
@@ -8,7 +8,7 @@ exports.setWebSocket = ( server ) =>{
 
   console.log('ok')
 
-  io = socketio(server)
+  io = new Server(server, { cors: { origin: '*' } })
 
   io.on('connection', socket => {
     const { latitude, longitude, techs } = socket.handshake.query

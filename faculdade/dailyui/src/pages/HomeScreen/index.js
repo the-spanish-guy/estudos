@@ -1,7 +1,8 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useEffect, useState } from "react";
-import { StyleSheet, Text, View, Image, AsyncStorage } from "react-native";
+import { StyleSheet, Text, View, Image } from "react-native";
 import logo from "../../../assets/logo.png";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Ionicons } from "@expo/vector-icons";
 
 import List from "../../components/List";
@@ -9,7 +10,7 @@ import List from "../../components/List";
 import styles from "./styles";
 import { references, leituras } from "../../utils/index";
 
-export default HomeScreen = ({ navigation }) => {
+const HomeScreen = ({ navigation }) => {
   async function logout() {
     const data = JSON.parse(await AsyncStorage.getItem('loginData'))
     data.logged = false
@@ -22,7 +23,7 @@ export default HomeScreen = ({ navigation }) => {
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={[styles.text]}>Desafio</Text>
-        <Ionicons name="ios-exit-outline" size={24} color="#E2428C" onPress={async () => await logout()} />
+        <Ionicons name="exit-outline" size={24} color="#E2428C" onPress={async () => await logout()} />
       </View>
       <View style={styles.jumbotron}>
         <Text style={[styles.title]}>Home Monitoring Dashboard</Text>
@@ -39,3 +40,5 @@ export default HomeScreen = ({ navigation }) => {
     </View>
   );
 };
+
+export default HomeScreen;

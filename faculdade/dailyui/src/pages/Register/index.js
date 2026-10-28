@@ -5,19 +5,19 @@ import {
   View,
   TextInput,
   TouchableOpacity,
-  AsyncStorage,
 } from "react-native";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Ionicons } from "@expo/vector-icons";
 import Checkbox from "expo-checkbox";
 import {
   createDownloadResumable,
   documentDirectory,
-} from "expo-file-system";
+} from "expo-file-system/legacy";
 
 import logo from "../../../assets/logo.png";
 import styles from "./styles";
 
-export default Register = ({ navigation }) => {
+const Register = ({ navigation }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
@@ -181,3 +181,5 @@ export default Register = ({ navigation }) => {
     </View>
   );
 };
+
+export default Register;

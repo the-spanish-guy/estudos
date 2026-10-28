@@ -6,14 +6,14 @@ import {
   TextInput,
   TouchableOpacity,
   Dimensions,
-  AsyncStorage,
 } from "react-native";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import { Ionicons } from "@expo/vector-icons";
 
 import logo from "../../../assets/logo.png";
 import styles from "./styles";
 
-export default Login = ({ navigation }) => {
+const Login = ({ navigation }) => {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [hiddenPassword, setHiddenPassword] = useState(true);
@@ -123,3 +123,5 @@ export default Login = ({ navigation }) => {
     </View>
   );
 };
+
+export default Login;

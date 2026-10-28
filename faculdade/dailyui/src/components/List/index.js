@@ -10,7 +10,7 @@ import {
 
 import styles from "./styles";
 
-export default List = ({ title, list, horizontal }) => {
+const List = ({ title, list, horizontal }) => {
   const [contentList, setContentList] = useState([]);
 
   function accessLink(url) {
@@ -73,3 +73,5 @@ export default List = ({ title, list, horizontal }) => {
     </View>
   );
 };
+
+export default List;

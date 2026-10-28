@@ -1,9 +1,8 @@
 import React from "react";
-import { View } from "react-native";
 import { WebView } from 'react-native-webview'
 
-function Profile({ navigation }) {
-    const githubUsername = navigation.getParam('github_username')
+function Profile({ route }) {
+    const { github_username: githubUsername } = route.params
 
     return <WebView style={{ flex: 1 }} source={{ uri: `https://github.com/${githubUsername}` }} />
 }

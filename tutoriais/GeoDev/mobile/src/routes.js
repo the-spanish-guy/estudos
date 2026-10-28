@@ -1,33 +1,38 @@
-import { createAppContainer } from "react-navigation";
-import { createStackNavigator } from "react-navigation-stack";
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import Main from './pages/Main'
 import Profile from './pages/Profile'
 
-const Routes = createAppContainer(
-    createStackNavigator({
-        Main:{
-            screen: Main,
-            navigationOptions: {
-                title: 'Geo Dev'
-            },
-        },
-        Profile: {
-            screen: Profile,
-            navigationOptions: {
-                title: 'Perfil do GitHub'
-            },
-        },
-    }, {
-        defaultNavigationOptions: {
-            headerTitleAlign: 'center', /*old headerLayoutPreset*/
-            headerTintColor: '#FFFFFF',
-            headerBackTitleVisible: false,
-            headerStyle: {
-                backgroundColor: '#FC7B6D'
-            }
-        },
-    })
-)
+const Stack = createNativeStackNavigator()
+
+function Routes() {
+    return (
+        <NavigationContainer>
+            <Stack.Navigator
+                screenOptions={{
+                    headerTitleAlign: 'center',
+                    headerTintColor: '#FFFFFF',
+                    headerBackButtonDisplayMode: 'minimal',
+                    headerStyle: {
+                        backgroundColor: '#FC7B6D'
+                    }
+                }}
+            >
+                <Stack.Screen
+                    name="Main"
+                    component={Main}
+                    options={{ title: 'Geo Dev' }}
+                />
+                <Stack.Screen
+                    name="Profile"
+                    component={Profile}
+                    options={{ title: 'Perfil do GitHub' }}
+                />
+            </Stack.Navigator>
+        </NavigationContainer>
+    )
+}
 
 export default Routes

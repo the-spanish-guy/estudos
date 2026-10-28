@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { FiLogIn } from 'react-icons/fi'
-import { Link, useHistory } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 import './styles.css'
 
@@ -11,7 +11,7 @@ import api from '../../services/api'
 export default function Logon () {
 
   const [id, setId] = useState('')
-  const history = useHistory()
+  const navigate = useNavigate()
 
   async function handleLogin(e) {
 
@@ -23,7 +23,7 @@ console.log(id)
       localStorage.setItem('ongId', id )
       localStorage.setItem('ongName', response.data.name )
 
-      history.push('/profile')
+      navigate('/profile')
     } catch (error) {
       alert('Ocorreu um erro ao tentar realizar o login')
       throw error

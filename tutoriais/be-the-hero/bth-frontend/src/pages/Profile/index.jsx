@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link, useHistory } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { FiPower, FiTrash2 } from 'react-icons/fi'
 
 import api from '../../services/api'
@@ -12,7 +12,7 @@ export default function Profile() {
   const ongId = localStorage.getItem('ongId')
   const ongName = localStorage.getItem('ongName')
 
-  const history = useHistory()
+  const navigate = useNavigate()
   const [incidents, setIncidents] = useState([])
 
   useEffect(() => {
@@ -50,7 +50,7 @@ export default function Profile() {
   function handleLogout() {
     localStorage.clear()
 
-    history.push('/')
+    navigate('/')
   }
 
   return(

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, useHistory } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { FiArrowLeft } from 'react-icons/fi'
 
 import './styles.css'
@@ -9,7 +9,7 @@ import api from '../../services/api'
 
 export default function Profile() {
   const ongId = localStorage.getItem('ongId')
-  const history = useHistory()
+  const navigate = useNavigate()
 
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
@@ -33,7 +33,7 @@ export default function Profile() {
         }
       })
 
-      history.push('/profile')
+      navigate('/profile')
       
     } catch (error) {
       alert('Ocorreu um erro ao cadastrar o incidente')

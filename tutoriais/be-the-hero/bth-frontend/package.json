@@ -3,24 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "axios": "^0.21.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-icons": "^3.9.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1"
+    "axios": "1.21.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-icons": "5.7.0",
+    "react-router-dom": "7.18.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "browserslist": {
     "production": [
@@ -35,6 +27,8 @@
     ]
   },
   "devDependencies": {
-    "dotenv": "^8.2.0"
-  }
+    "@vitejs/plugin-react": "6.1.2",
+    "vite": "8.3.5"
+  },
+  "type": "module"
 }

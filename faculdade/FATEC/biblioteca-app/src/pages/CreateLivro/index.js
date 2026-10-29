@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { View, Text, TextInput, FlatList, Button, TouchableOpacity, Alert, Image } from 'react-native'
-import { Picker } from "@react-native-community/picker";
-import * as Permissions from 'expo-permissions'
+import { Picker } from "@react-native-picker/picker";
 import * as ImagePicker from 'expo-image-picker'
 
 import moment from 'moment'
@@ -33,7 +32,7 @@ export default function CreateLivro({ navigation }) {
   const [avatar, setAvatar] = useState();
 
   async function imagePermission() {
-    const { status } = await Permissions.askAsync(Permissions.CAMERA_ROLL)
+    const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync()
     if(status !== 'granted') {
       alert('permissao')
       return;
@@ -41,15 +40,15 @@ export default function CreateLivro({ navigation }) {
 
     const data = await ImagePicker.launchImageLibraryAsync({})
 
-    if(data.cancelled) {
+    if(data.canceled) {
       return;
     }
-    if(!data.uri){
+    if(!data.assets?.[0]?.uri){
       return;
     }
     
     console.log(data)
-    setAvatar(data);
+    setAvatar(data.assets[0]);
   }
 
   async function insereLivro(

@@ -1,6 +1,5 @@
 import { StyleSheet } from 'react-native'
 import Constant from 'expo-constants'
-import { ceil } from 'react-native-reanimated'
 
 export default StyleSheet.create({
   container: {

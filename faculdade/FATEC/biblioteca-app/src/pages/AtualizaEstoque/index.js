@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, Button, FlatList, Image, TextInput } from
 import { FontAwesome } from "@expo/vector-icons";
 import api from '../../services/api';
 import styles from './styles'
-import { Picker } from '@react-native-community/picker';
+import { Picker } from '@react-native-picker/picker';
 
 export default function AtualizaEstoque() {
 

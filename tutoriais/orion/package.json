@@ -1,0 +1,24 @@
+{
+  "name": "orion",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "immer": "^11.2.9",
+    "react": "16.14.0",
+    "react-dnd": "10.0.2",
+    "react-dnd-html5-backend": "10.0.2",
+    "react-dom": "16.14.0",
+    "react-icons": "3.9.0",
+    "styled-components": "5.0.0"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.2",
+    "vite": "^8.3.5"
+  },
+  "type": "module"
+}
